@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "dogdex",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "dogdex",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "dogdex",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "dogdex",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "dogdex",
+    "public": false
+  },
+  "Wiki": {
+    "dataSource": "dogdex",
+    "public": true
+  },
+  "Dog": {
+    "dataSource": "dogdex",
+    "public": true
+  }
+}

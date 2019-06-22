@@ -1,0 +1,53 @@
+{
+  "name": "Wiki",
+  "plural": "Wiki",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "term": {
+      "type": "string",
+      "required": true
+    },
+    "searchResult": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "Search": {
+      "accepts": [
+        {
+          "arg": "term",
+          "type": "string",
+          "required": true,
+          "description": ""
+        }
+      ],
+      "returns": [
+        {
+          "arg": "searchResult",
+          "type": "array",
+          "root": true,
+          "description": ""
+        }
+      ],
+      "description": "",
+      "http": [
+        {
+          "path": "/search",
+          "verb": "get"
+        }
+      ]
+    }
+  }
+}

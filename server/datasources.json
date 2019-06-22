@@ -1,0 +1,11 @@
+{
+  "dogdex": {
+    "host": "ec2-23-21-186-85.compute-1.amazonaws.com",
+    "port": 5432,
+    "database": "d525b0c5dvj8r3",
+    "password": "d27f8bdbee7df6e1ca215fed5fe8be251c3370f6b6d24132788d4ab24225c3e4",
+    "name": "dogdex",
+    "user": "fcxlygeidgjyba",
+    "connector": "postgresql"
+  }
+}
