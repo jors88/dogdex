@@ -13,7 +13,7 @@
     "build": "quasar build"
   },
   "dependencies": {
-    "axios": "^0.18.1"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "@vue/eslint-config-standard": "^4.0.0",
